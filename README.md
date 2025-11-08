@@ -8,6 +8,8 @@ An educational repository for running small Continual Learning (CL) benchmarks o
 
 Under the hood we use [Avalanche](https://avalanche.continualai.org) for CL strategies and metrics.
 
+For a more interactive documentation, please refer to deepwiki
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/afifhaziq/IDSContinualBenchmark)
 
 ### Quick start
 
