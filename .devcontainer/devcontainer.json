@@ -1,0 +1,24 @@
+{
+  "name": "IDSContinualBenchmark Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff" 
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "notebook.output.textLineLimit": 100
+      }
+    }
+  },
+  // This runs once the container is created
+  "postCreateCommand": "pip install uv && uv sync",
+  
+  // Map the user to 'vscode' to avoid permission issues
+  "remoteUser": "vscode"
+}
